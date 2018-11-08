@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Temperature Calculation</title>
+</head>
+
+<body>
+<table border="0" align-"center" width="200">
+<tr>
+<td width="100">
+<form method="" action="">
+<label for="F">Enter Farenheit Value:</label>
+</td>
+<td width="100">
+<input id="F" name="FahTemp" type="text" size="25" onkeypress="return isNumberKey(event)">
+</form>
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="button" value="Show Results" onclick="Convert()" required>
+</td>
+</tr>
+
+
+
+<script type="text/javascript">
+function Convert()
+{
+var f,c;
+f=document.getElementById("F").value
+if(f)
+{
+c=(f-32)*5/9
+alert(Math.round(c)+ " degree celsius")
+}
+}
+</script>
+</table>
+</body>
+
+
+
+
+
+</html>
