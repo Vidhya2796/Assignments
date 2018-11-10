@@ -1,0 +1,96 @@
+\\in-blr-cmdp01
+
+C:\Users\vidhyc\Downloads
+
+https://github.com/Vidhya2796/freshersbatch.git
+
+https://blogs.oracle.com/oraclemagazine/a-function-of-character
+
+Example
+Let's look at some Oracle TRIM function examples and explore how to use the TRIM function in Oracle/PLSQL.
+
+For example:
+
+TRIM('   tech   ')
+Result: 'tech'
+
+TRIM(' '  FROM  '   tech   ')
+Result: 'tech'
+
+TRIM(LEADING '0' FROM '000123')
+Result: '123'
+
+TRIM(TRAILING '1' FROM 'Tech1')
+Result: 'Tech'
+
+TRIM(BOTH '1' FROM '123Tech111')
+Result: '23Tech'
+
+
+REPLACE:
+********
+REPLACE('123123tech', '123');
+Result: 'tech'
+
+REPLACE('123tech123', '123');
+Result:'tech'
+
+REPLACE('222tech', '2', '3');
+Result: '333tech'
+
+REPLACE('0000123', '0');
+Result: '123'
+
+REPLACE('0000123', '0', ' ');
+Result: '    123'
+
+https://www.quackit.com/html/codes/tables/html_table_background_color.cfm
+
+
+https://www.w3schools.com/html/html_tables.asp
+
+http://daydreamsgirl.com/articles/how-to-make-and-insert-a-simple-html-table-with-images-for-blogs/
+
+http://wikibrand.blogspot.com/2012/12/week-1-static-web-pages-required-for.html
+
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_validation_number
+
+COMPOSITE KEY--->when two or more columns in a table clubbed or combined together and act 
+like a primary key means then it is known as composite key
+
+THERE IS A DIFF BETWEEN <INPUT TYPE="BUTTON" VALUE="SUBMIT">
+AND <BUTTON TYPE="SUBMIT">BUTTON</BUTTON> AND
+<INPUT TYPE="SUBMIT">
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="vidhya.html">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
+
+If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".
+<form action="example.com" >
+  <button type="submit">Button</button>
+</form> 
+
+
+
+http://infolab.stanford.edu/~ullman/fcdb/oracle/or-time.html
+
+https://www.rapidtables.com/web/color/Yellow_Color.html
