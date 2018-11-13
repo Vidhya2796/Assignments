@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bank Details</title>
+
+<script type="text/javascript">
+
+function BankAcnt(name,balance,number)
+{
+	this.acntname=name;
+	var acntbal=balance;
+	var acntnum=number;
+
+	function checkBal()
+	{
+	   console.log("<br/> Your Account Balance is "+acntbal+"<br/>");
+	}
+
+	return
+	{
+	   withdraw : function(amt)
+                 {
+	       checkBal();
+	       if(acntbal < amt)
+		{
+		  console.log("Sry Your Account Balance is lower than your withdraw amount <br/>");
+		}
+	       else
+		{
+		acntbal=acntbal - amt;
+		console.log("After Withdrawal: "+ checkBal());	
+		}
+	   },
+
+	deposit : function(d_amt)
+	{
+	   checkBal();
+	   acntbal=acntbal+d_amt;
+	   console.log("After Deposit:" + checkBal());
+	},
+
+	getAcntNum : function()
+	{
+	   return acntnum;
+	}
+
+	}
+}
+
+var bankacnt1=new BankAcnt("Vidhya",10000.0,1234);
+var name=bankacnt1.acntname;
+console.log("Hello "+ name+ "<br/>");
+//var num=bankacnt1.acntnum;
+var num=bankacnt1.getAcntNum();
+console.log("Your account number is "+ num + "<br/>");
+bankacnt1.withdraw(3000);
+bankacnt1.deposit(3000);
+
+</script>
+
+
+
+</head>
+
+<body>
+<h1 align="center">Bank Account Details</h1>
+<script type="text/javascript">
+
+
+
+</script>
+</body>
+</html>
