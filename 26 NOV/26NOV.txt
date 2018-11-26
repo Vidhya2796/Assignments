@@ -1,0 +1,122 @@
+
+//HASHMAP CLASS LOAD FACTOR AND INITIAL CAPACITY
+1)Default initial capacity of the HashMap takes is 16 and load factor is 0.75f (i.e 75% of current map size). The load factor represents at what level the HashMap capacity should be doubled.
+
+For example product of capacity and load factor as 16 * 0.75 = 12. This represents that after storing the 12th key – value pair into the HashMap , its capacity becomes 32.
+
+//ENHANCED FOR-EACH LOOP
+
+Syntax of for-each loop:
+for(data_type variable : array | collection){}  
+Simple Example of for-each loop for traversing the array elements:
+    
+class ForEachExample1{  
+  public static void main(String args[]){  
+   int arr[]={12,13,14,44};  
+  
+   for(int i:arr){  
+     System.out.println(i);  
+   }  
+  
+ }   
+} 
+
+
+//ITERATOR INTERFACE OBJECT CREATION
+Iterator object can be created by calling iterator() method present in Collection interface.
+
+// Here "c" is any Collection object. itr is of
+// type Iterator interface and refers to "c"
+Iterator itr = c.iterator();
+
+//HASHSET EXAMPLE IN JAVATPOINT
+
+Java HashSet Example: Book
+Let's see a HashSet example where we are adding books to set and printing all the books.
+
+import java.util.*;  
+class Book {  
+int id;  
+String name,author,publisher;  
+int quantity;  
+public Book(int id, String name, String author, String publisher, int quantity) {  
+    this.id = id;  
+    this.name = name;  
+    this.author = author;  
+    this.publisher = publisher;  
+    this.quantity = quantity;  
+}  
+}  
+public class HashSetExample {  
+public static void main(String[] args) {  
+    HashSet<Book> set=new HashSet<Book>();  
+    //Creating Books  
+    Book b1=new Book(101,"Let us C","Yashwant Kanetkar","BPB",8);  
+    Book b2=new Book(102,"Data Communications & Networking","Forouzan","Mc Graw Hill",4);  
+    Book b3=new Book(103,"Operating System","Galvin","Wiley",6);  
+    //Adding Books to HashSet  
+    set.add(b1);  
+    set.add(b2);  
+    set.add(b3);  
+    //Traversing HashSet  
+    for(Book b:set){  
+    System.out.println(b.id+" "+b.name+" "+b.author+" "+b.publisher+" "+b.quantity);  
+    }  
+}  
+}  
+Output:
+
+101 Let us C Yashwant Kanetkar BPB 8
+102 Data Communications & Networking Forouzan Mc Graw Hill 4
+103 Operating System Galvin Wiley 6 
+
+
+//HASHMAP---->MAP.ENTRY INTERFACE
+
+Following is an example showing how Map.Entry can be used -
+
+ Live Demo
+import java.util.*;
+public class HashMapDemo {
+
+   public static void main(String args[]) {
+      // Create a hash map
+      HashMap hm = new HashMap();
+
+      // Put elements to the map
+      hm.put("Zara", new Double(3434.34));
+      hm.put("Mahnaz", new Double(123.22));
+      hm.put("Ayan", new Double(1378.00));
+      hm.put("Daisy", new Double(99.22));
+      hm.put("Qadir", new Double(-19.08));
+      
+      // Get a set of the entries
+      Set set = hm.entrySet();
+      
+      // Get an iterator
+      Iterator i = set.iterator();
+     
+      // Display elements 
+      while(i.hasNext()) {
+         Map.Entry me = (Map.Entry)i.next();
+         System.out.print(me.getKey() + ": ");
+         System.out.println(me.getValue());
+      }
+      System.out.println();
+     
+      // Deposit 1000 into Zara's account
+      double balance = ((Double)hm.get("Zara")).doubleValue();
+      hm.put("Zara", new Double(balance + 1000));
+      System.out.println("Zara's new balance: " + hm.get("Zara"));
+   }
+}
+This will produce the following result -
+
+Output
+Daisy: 99.22
+Ayan: 1378.0
+Zara: 3434.34
+Qadir: -19.08
+Mahnaz: 123.22
+
+Zara's new balance: 4434.34 
